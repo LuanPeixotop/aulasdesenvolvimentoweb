@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cartão de Crédito </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+	<div class="container">
+    	<section id="page"> 
+            <header>
+                <hgroup>
+                    <img src="./img/cartao.png">
+                    <h3>Cartão de Crédito</h3>
+                    <h3>"Crédito para quem não tem"</h3>
+					<h3>Melhor do que Nubank</h3>
+                </hgroup>
+                                
+                <nav class="clear">
+                    <ul>
+                        <li><a href="#article1">Cartão de Crédito</a></li>
+                    </ul>
+                </nav>
+            
+            </header>
+            
+            <section id="articles"> 
+
+                <div class="line"></div>
+                
+                <article id="article1">
+                    <h2>Cartão de Crédito</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    
+                    	<figure> 
+	                    	<img src="./img/cartao.png">
+                        </figure>	
+                        
+                        <p> Cartão de crédito é uma forma de pagamento eletrônico. É um cartão
+							de plástico que pode conter ou não um chip e apresenta na frente o
+							nome do portador, número do cartão e data de validade (pelo menos)
+							e, no verso, um campo para assinatura do cliente, o número de
+							segurança (CVV) e a tarja magnética (geralmente preta). A maioria de
+							cartões de crédito tem forma e tamanho padronizados, como
+							especificado pelo padrão do ISO 7810.
+						</p>
+						<p>
+							O cartão de crédito pode ser usado como meio de pagamento para comprar um bem ou contratar um
+							serviço. O titular recebe mensalmente no endereço indicado a fatura para pagamento e pode escolher pagar
+							o total cobrado, somente o mínimo ou algum valor intermediário, postergando o pagamento do restante
+							para o mês seguinte mediante cobrança de juros.
+
+						</p>
+                    </div>
+                </article>
+		</section>
+		
+		<div class="card_form">	
+			<form action="send-card" method="post">
+				<label for="card_number">Número do cartão</label><br/>
+				<input type="number" id="card_number"> <br/>
+				<br/>
+				<label for="card_name">Nome do cartão</label><br/>
+				<input type="text" id="card_name"> <br/>
+				<br/>
+				<label for="card_validity">Validade</label><br/>
+				<input type="month" id="card_validity"> <br/>
+				<br/>
+				<label for="card_cvc">Código de Segurança</label><br/>
+				<input  type="number" id="card_cvc" placeholder="CVC" maxlength="999"> <br/>			
+			</form>
+		</div>
+		
+		<footer> 
+			<p>Cartões de Crédito S.A. Todos os direitos reservados</p>
+        </footer>
+	</div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
